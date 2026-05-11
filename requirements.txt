@@ -1,23 +1,5 @@
-# ═══════════════════════════════════════════════════════════════════
-# Astra — Vishnunath Nharekkat
-# requirements.txt (May 2026)
-#
-# Python 3.10+ recommended (3.11 or 3.12 ideal for Streamlit Cloud)
-#
-# Install: pip install -r requirements.txt
-# ═══════════════════════════════════════════════════════════════════
-
-# ── Web UI ─────────────────────────────────────────────────────────
-streamlit==1.40.2
-
-# ── LLM (Google Gemini, new SDK) ───────────────────────────────────
-# google-genai is the current SDK (replaces the deprecated google-generativeai)
-# Imports used in app.py: `from google import genai` and `from google.genai import types`
-google-genai==1.3.0
-
-# ── Schema validation ──────────────────────────────────────────────
-pydantic==2.10.4
-
-# ── Document rendering ─────────────────────────────────────────────
-python-docx==1.1.2     # DOCX resume + cover letter renderer
-reportlab==4.2.5       # PDF resume renderer
+streamlit>=1.32.0
+google-genai>=1.0.0
+pydantic>=2.0.0
+python-docx>=1.1.0
+reportlab>=4.1.0
